@@ -2,7 +2,7 @@
     <h3 class="text-light">Gifs</h3>
     <div class="list-group list-reset"></div>
     <hr class="text-white">
-    <a href="#" class="list-group-item list-group-action" *ngFor="let item of historial" >
+    <a href="#" class="list-group-item list-group-action" *ngFor="let item of historial" (click)="buscar(item)">
       {{item | titlecase}}
      
     </a>
